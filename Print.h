@@ -1,0 +1,3 @@
+
+
+void print(const char*);
