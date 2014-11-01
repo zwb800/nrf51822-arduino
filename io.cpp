@@ -2,7 +2,7 @@
 #include "nrf_gpio.h"
 #include "Arduino.h"
 
-/**gpioº¯Êý
+/**gpioå‡½æ•°
 */
 
 void pinMode(uint8_t pin, uint8_t dir)
