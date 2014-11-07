@@ -9,7 +9,7 @@ extern "C"{
 } // extern "C"
 #endif
 
-
+//不支持速率设置
 void HardwareSerial::begin(unsigned long baud)
 {
 	/** @snippet [Configure UART RX and TX pin] */
