@@ -43,14 +43,14 @@
             <NotGenerated>0</NotGenerated>
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
-          <OutputDirectory>..\build\</OutputDirectory>
+          <OutputDirectory>.\build\</OutputDirectory>
           <OutputName>ble_app_arduino</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
           <DebugInformation>1</DebugInformation>
           <BrowseInformation>1</BrowseInformation>
-          <ListingPath>..\build\</ListingPath>
+          <ListingPath>.\build\</ListingPath>
           <HexFormatSelection>1</HexFormatSelection>
           <Merge32K>0</Merge32K>
           <CreateBatchFile>0</CreateBatchFile>
@@ -395,12 +395,12 @@
             <File>
               <FileName>arm_startup_nrf51.s</FileName>
               <FileType>2</FileType>
-              <FilePath>..\..\..\..\..\Source\templates\arm\arm_startup_nrf51.s</FilePath>
+              <FilePath>..\..\..\..\Source\templates\arm\arm_startup_nrf51.s</FilePath>
             </File>
             <File>
               <FileName>system_nrf51.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\..\Source\templates\system_nrf51.c</FilePath>
+              <FilePath>..\..\..\..\Source\templates\system_nrf51.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -435,7 +435,7 @@
             <File>
               <FileName>simple_uart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\..\Source\simple_uart\simple_uart.c</FilePath>
+              <FilePath>..\..\..\..\Source\simple_uart\simple_uart.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -445,12 +445,12 @@
             <File>
               <FileName>HardwareSerial.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\HardwareSerial.h</FilePath>
+              <FilePath>.\HardwareSerial.h</FilePath>
             </File>
             <File>
               <FileName>Arduino.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\Arduino.h</FilePath>
+              <FilePath>.\Arduino.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -845,12 +845,12 @@
             <File>
               <FileName>arm_startup_nrf51.s</FileName>
               <FileType>2</FileType>
-              <FilePath>..\..\..\..\..\Source\templates\arm\arm_startup_nrf51.s</FilePath>
+              <FilePath>..\..\..\..\Source\templates\arm\arm_startup_nrf51.s</FilePath>
             </File>
             <File>
               <FileName>system_nrf51.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\..\Source\templates\system_nrf51.c</FilePath>
+              <FilePath>..\..\..\..\Source\templates\system_nrf51.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -885,7 +885,7 @@
             <File>
               <FileName>simple_uart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\..\Source\simple_uart\simple_uart.c</FilePath>
+              <FilePath>..\..\..\..\Source\simple_uart\simple_uart.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -895,12 +895,12 @@
             <File>
               <FileName>HardwareSerial.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\HardwareSerial.h</FilePath>
+              <FilePath>.\HardwareSerial.h</FilePath>
             </File>
             <File>
               <FileName>Arduino.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\Arduino.h</FilePath>
+              <FilePath>.\Arduino.h</FilePath>
             </File>
           </Files>
         </Group>
