@@ -1,10 +1,11 @@
 #include "Arduino.h"
-
+#include "spi_master.h"
 #ifdef __cplusplus
 extern "C"{
 #endif
 	
 #include "nrf_delay.h"
+
 	
 #ifdef __cplusplus
 } // extern "C"

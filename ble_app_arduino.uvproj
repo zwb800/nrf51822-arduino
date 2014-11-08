@@ -351,7 +351,7 @@
               <MiscControls></MiscControls>
               <Define>NRF51 DEBUG_NRF_USER BLE_STACK_SUPPORT_REQD BOARD_PCA10001</Define>
               <Undefine></Undefine>
-              <IncludePath>..;..\..\..\..\..\Include;..\..\..\..\..\Include\app_common;..\..\..\..\..\Include\ble;..\..\..\..\..\Include\ble\ble_services;..\..\..\..\..\Include\ble\softdevice;..\..\..\..\..\Include\sd_common</IncludePath>
+              <IncludePath>..;..\..\..\..\Include;..\..\..\..\Include\app_common;..\..\..\..\Include\ble;..\..\..\..\Include\ble\ble_services;..\..\..\..\Include\ble\softdevice;..\..\..\..\Include\sd_common;..\..\..\..\Include\s110</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -441,6 +441,11 @@
               <FileName>nrf_delay.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\..\Source\nrf_delay\nrf_delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>spi_master.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\Source\spi_master\spi_master.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -896,6 +901,11 @@
               <FileName>nrf_delay.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\..\Source\nrf_delay\nrf_delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>spi_master.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\Source\spi_master\spi_master.c</FilePath>
             </File>
           </Files>
         </Group>
