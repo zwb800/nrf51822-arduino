@@ -13,10 +13,10 @@
       <TargetOption>
         <TargetCommonOption>
           <Device>nRF51822_xxAA</Device>
-          <Vendor>Nordic</Vendor>
+          <Vendor>Nordic Semiconductor</Vendor>
           <Cpu>IRAM(0x20000000-0x20003FFF) IROM(0-0x3FFFF) CLOCK(16000000) CPUTYPE("Cortex-M0") ESEL ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
-          <StartupFile>"Device\Nordic\nRF51822\Source\templates\arm\arm_startup_nrf51.s"("Nordic Semiconductor nRF51822 Startup Code")</StartupFile>
+          <StartupFile>"Device\Nordic\nRF51822\Source\templates\arm\arm_startup_nrf51.s"("Nordic Semiconductor nRF51822_xxAA Startup Code")</StartupFile>
           <FlashDriverDll>UL2CM3(-UM0364FCE -O78 -S0 -C0 -TO18 -TC16000000 -TP21 -TDS800D -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO15 -FD20000000 -FC2000 -FN1 -FF0nRF51xxx -FS00 -FL0200000)</FlashDriverDll>
           <DeviceId>0</DeviceId>
           <RegisterFile>nrf.h</RegisterFile>
@@ -29,7 +29,8 @@
           <SLE66CMisc></SLE66CMisc>
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
-          <SFDFile>SFD\Nordic\nRF51\nrf51822.sfr</SFDFile>
+          <SFDFile>SFD\Nordic\nRF51\nRF51822.sfr</SFDFile>
+          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -97,16 +98,17 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
+          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
           <SimDllArguments></SimDllArguments>
           <SimDlgDll>DARMCM1.DLL</SimDlgDll>
-          <SimDlgDllArguments>-dnRF5</SimDlgDllArguments>
+          <SimDlgDllArguments>-pCM0</SimDlgDllArguments>
           <TargetDllName>SARMCM3.DLL</TargetDllName>
           <TargetDllArguments></TargetDllArguments>
           <TargetDlgDll>TARMCM1.DLL</TargetDlgDll>
-          <TargetDlgDllArguments></TargetDlgDllArguments>
+          <TargetDlgDllArguments>-pCM0</TargetDlgDllArguments>
         </DllOption>
         <DebugOption>
           <OPTHX>
@@ -163,12 +165,16 @@
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
             <Capability>1</Capability>
-            <DriverSelection>4099</DriverSelection>
+            <DriverSelection>4096</DriverSelection>
           </Flash1>
           <bUseTDR>1</bUseTDR>
-          <Flash2>Segger\JL2CM3.dll</Flash2>
+          <Flash2>BIN\UL2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
+          <pFcarmOut></pFcarmOut>
+          <pFcarmGrp></pFcarmGrp>
+          <pFcArmRoot></pFcArmRoot>
+          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -297,8 +303,8 @@
               </OCR_RVCT3>
               <OCR_RVCT4>
                 <Type>1</Type>
-                <StartAddress>0x14000</StartAddress>
-                <Size>0x2b000</Size>
+                <StartAddress>0x16000</StartAddress>
+                <Size>0x29000</Size>
               </OCR_RVCT4>
               <OCR_RVCT5>
                 <Type>1</Type>
@@ -335,8 +341,8 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>4</Optim>
-            <oTime>1</oTime>
+            <Optim>1</Optim>
+            <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>0</OneElfS>
             <Strict>0</Strict>
@@ -349,7 +355,7 @@
             <uSurpInc>0</uSurpInc>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>NRF51 DEBUG_NRF_USER BLE_STACK_SUPPORT_REQD BOARD_PCA10001</Define>
+              <Define>NRF51 DEBUG_NRF_USER BLE_STACK_SUPPORT_REQD BOARD_PCA10001 SPI_MASTER_0_ENABLE</Define>
               <Undefine></Undefine>
               <IncludePath>..;..\..\..\..\Include;..\..\..\..\Include\app_common;..\..\..\..\Include\ble;..\..\..\..\Include\ble\ble_services;..\..\..\..\Include\ble\softdevice;..\..\..\..\Include\sd_common;..\..\..\..\Include\s110</IncludePath>
             </VariousControls>
@@ -427,11 +433,26 @@
               <FileType>8</FileType>
               <FilePath>.\io.cpp</FilePath>
             </File>
+            <File>
+              <FileName>Blink.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\Blink.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>SPI.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\SPI.cpp</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>Library</GroupName>
           <Files>
+            <File>
+              <FileName>spi_master.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\Source\spi_master\spi_master.c</FilePath>
+            </File>
             <File>
               <FileName>simple_uart.c</FileName>
               <FileType>1</FileType>
@@ -441,11 +462,6 @@
               <FileName>nrf_delay.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\..\Source\nrf_delay\nrf_delay.c</FilePath>
-            </File>
-            <File>
-              <FileName>spi_master.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\..\Source\spi_master\spi_master.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -461,6 +477,11 @@
               <FileName>Arduino.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Arduino.h</FilePath>
+            </File>
+            <File>
+              <FileName>SPI.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\SPI.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -490,6 +511,7 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Nordic\nRF51\nrf51822.sfr</SFDFile>
+          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -557,6 +579,7 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
+          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -629,6 +652,10 @@
           <Flash2>Segger\JL2CM3.dll</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
+          <pFcarmOut></pFcarmOut>
+          <pFcarmGrp></pFcarmGrp>
+          <pFcArmRoot></pFcArmRoot>
+          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -887,11 +914,26 @@
               <FileType>8</FileType>
               <FilePath>.\io.cpp</FilePath>
             </File>
+            <File>
+              <FileName>Blink.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\Blink.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>SPI.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\SPI.cpp</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>Library</GroupName>
           <Files>
+            <File>
+              <FileName>spi_master.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\Source\spi_master\spi_master.c</FilePath>
+            </File>
             <File>
               <FileName>simple_uart.c</FileName>
               <FileType>1</FileType>
@@ -901,11 +943,6 @@
               <FileName>nrf_delay.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\..\Source\nrf_delay\nrf_delay.c</FilePath>
-            </File>
-            <File>
-              <FileName>spi_master.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\..\Source\spi_master\spi_master.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -921,6 +958,11 @@
               <FileName>Arduino.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Arduino.h</FilePath>
+            </File>
+            <File>
+              <FileName>SPI.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\SPI.h</FilePath>
             </File>
           </Files>
         </Group>

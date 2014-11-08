@@ -1,112 +1,159 @@
 Dependencies for Project 'ble_app_arduino', Target 'nrf51822_xxaa_s110 (256K)': (DO NOT MODIFY !)
-F (..\..\..\..\Source\templates\arm\arm_startup_nrf51.s)(0x53B246B4)(--cpu Cortex-M0 --li --pd "__EVAL SETA 1" -g --apcs=interwork -I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Device\Nordic\nRF51822\Include--list .\build\arm_startup_nrf51.lst --xref -o .\build\arm_startup_nrf51.o --depend .\build\arm_startup_nrf51.d)
-F (..\..\..\..\Source\templates\system_nrf51.c)(0x53B246B4)(-c --cpu Cortex-M0 -D__EVAL --li -g -O3 -Otime --apcs=interwork --enum_is_int -I.. -I..\..\..\..\Include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10001 -o .\build\system_nrf51.o --omf_browse .\build\system_nrf51.crf --depend .\build\system_nrf51.d)
-I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf.h)(0x53B246B4)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf51.h)(0x53B246B4)
-I (D:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x51C7B54A)
-I (D:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (D:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\system_nrf51.h)(0x53B246B4)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf51_bitfields.h)(0x53B246B4)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf51_deprecated.h)(0x53B246B4)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\compiler_abstraction.h)(0x53B246B4)
-F (.\main.cpp)(0x545DF317)(--cpp -c --cpu Cortex-M0 -D__EVAL --li -g -O3 -Otime --apcs=interwork --enum_is_int -I.. -I..\..\..\..\Include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10001 -o .\build\main.o --omf_browse .\build\main.crf --depend .\build\main.d)
-I (D:\Keil\ARM\Device\Nordic\nrf51822\Board\pca10001\s110\nrf51822-arduino\Arduino.h)(0x545C7313)
-I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
-I (D:\Keil\ARM\ARMCC\include\math.h)(0x51C7B744)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\boards.h)(0x53B24588)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\boards\pca10001.h)(0x53B2458A)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf_gpio.h)(0x53B2457E)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf51.h)(0x53B246B4)
-I (D:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x51C7B54A)
-I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (D:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (D:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\system_nrf51.h)(0x53B246B4)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf51_bitfields.h)(0x53B246B4)
-I (D:\Keil\ARM\Device\Nordic\nrf51822\Board\pca10001\s110\nrf51822-arduino\HardwareSerial.h)(0x545C7313)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\spi_master.h)(0x545DF35D)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf_delay.h)(0x53B2457E)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf.h)(0x53B246B4)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf51_deprecated.h)(0x53B246B4)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\compiler_abstraction.h)(0x53B246B4)
-F (.\HardwareSerial.cpp)(0x545C735E)(--cpp -c --cpu Cortex-M0 -D__EVAL --li -g -O3 -Otime --apcs=interwork --enum_is_int -I.. -I..\..\..\..\Include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10001 -o .\build\hardwareserial.o --omf_browse .\build\hardwareserial.crf --depend .\build\hardwareserial.d)
-I (D:\Keil\ARM\Device\Nordic\nrf51822\Board\pca10001\s110\nrf51822-arduino\HardwareSerial.h)(0x545C7313)
-I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\boards.h)(0x53B24588)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\boards\pca10001.h)(0x53B2458A)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf_gpio.h)(0x53B2457E)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf51.h)(0x53B246B4)
-I (D:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x51C7B54A)
-I (D:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (D:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\system_nrf51.h)(0x53B246B4)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf51_bitfields.h)(0x53B246B4)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\simple_uart.h)(0x53B2458A)
-I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
-F (.\Arduino.cpp)(0x545C7CE6)(--cpp -c --cpu Cortex-M0 -D__EVAL --li -g -O3 -Otime --apcs=interwork --enum_is_int -I.. -I..\..\..\..\Include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10001 -o .\build\arduino.o --omf_browse .\build\arduino.crf --depend .\build\arduino.d)
-I (D:\Keil\ARM\Device\Nordic\nrf51822\Board\pca10001\s110\nrf51822-arduino\Arduino.h)(0x545C7313)
-I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
-I (D:\Keil\ARM\ARMCC\include\math.h)(0x51C7B744)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\boards.h)(0x53B24588)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\boards\pca10001.h)(0x53B2458A)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf_gpio.h)(0x53B2457E)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf51.h)(0x53B246B4)
-I (D:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x51C7B54A)
-I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (D:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (D:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\system_nrf51.h)(0x53B246B4)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf51_bitfields.h)(0x53B246B4)
-I (D:\Keil\ARM\Device\Nordic\nrf51822\Board\pca10001\s110\nrf51822-arduino\HardwareSerial.h)(0x545C7313)
-F (.\io.cpp)(0x545C7313)(--cpp -c --cpu Cortex-M0 -D__EVAL --li -g -O3 -Otime --apcs=interwork --enum_is_int -I.. -I..\..\..\..\Include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10001 -o .\build\io.o --omf_browse .\build\io.crf --depend .\build\io.d)
-I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf_gpio.h)(0x53B2457E)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf51.h)(0x53B246B4)
-I (D:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x51C7B54A)
-I (D:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (D:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\system_nrf51.h)(0x53B246B4)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf51_bitfields.h)(0x53B246B4)
-I (D:\Keil\ARM\Device\Nordic\nrf51822\Board\pca10001\s110\nrf51822-arduino\Arduino.h)(0x545C7313)
-I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
-I (D:\Keil\ARM\ARMCC\include\math.h)(0x51C7B744)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\boards.h)(0x53B24588)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\boards\pca10001.h)(0x53B2458A)
-I (D:\Keil\ARM\Device\Nordic\nrf51822\Board\pca10001\s110\nrf51822-arduino\HardwareSerial.h)(0x545C7313)
-F (..\..\..\..\Source\simple_uart\simple_uart.c)(0x53B24574)(-c --cpu Cortex-M0 -D__EVAL --li -g -O3 -Otime --apcs=interwork --enum_is_int -I.. -I..\..\..\..\Include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10001 -o .\build\simple_uart.o --omf_browse .\build\simple_uart.crf --depend .\build\simple_uart.d)
-I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf.h)(0x53B246B4)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf51.h)(0x53B246B4)
-I (D:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x51C7B54A)
-I (D:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (D:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\system_nrf51.h)(0x53B246B4)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf51_bitfields.h)(0x53B246B4)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf51_deprecated.h)(0x53B246B4)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\compiler_abstraction.h)(0x53B246B4)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\simple_uart.h)(0x53B2458A)
-I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf_delay.h)(0x53B2457E)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf_gpio.h)(0x53B2457E)
-F (..\..\..\..\Source\nrf_delay\nrf_delay.c)(0x53B2451E)(-c --cpu Cortex-M0 -D__EVAL --li -g -O3 -Otime --apcs=interwork --enum_is_int -I.. -I..\..\..\..\Include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10001 -o .\build\nrf_delay.o --omf_browse .\build\nrf_delay.crf --depend .\build\nrf_delay.d)
-I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\compiler_abstraction.h)(0x53B246B4)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf.h)(0x53B246B4)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf51.h)(0x53B246B4)
-I (D:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x51C7B54A)
-I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (D:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (D:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\system_nrf51.h)(0x53B246B4)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf51_bitfields.h)(0x53B246B4)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf51_deprecated.h)(0x53B246B4)
-I (D:\Keil\ARM\Device\Nordic\nRF51822\Include\nrf_delay.h)(0x53B2457E)
-F (..\..\..\..\Source\spi_master\spi_master.c)(0x53B24522)()
-I (D:\Keil\ARM\Device\Nordic\nrf51822\Include\app_common\app_error.h)(0x53B2457C)
-I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
-F (.\HardwareSerial.h)(0x545C7313)()
-F (.\Arduino.h)(0x545C7313)()
+F (..\..\..\..\Source\templates\arm\arm_startup_nrf51.s)(0x53B246B4)(--cpu Cortex-M0 --li -g --apcs=interwork -I d:\Keil\ARM\RV31\INC-I d:\Keil\ARM\CMSIS\Include-I d:\Keil\ARM\Device\Nordic\nRF51822\Include--list .\build\arm_startup_nrf51.lst --xref -o .\build\arm_startup_nrf51.o --depend .\build\arm_startup_nrf51.d)
+F (..\..\..\..\Source\templates\system_nrf51.c)(0x53B246B4)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --enum_is_int -I.. -I..\..\..\..\Include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\Include\s110-I d:\Keil\ARM\RV31\INC-I d:\Keil\ARM\CMSIS\Include-I d:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10001 -DSPI_MASTER_0_ENABLE -o .\build\system_nrf51.o --omf_browse .\build\system_nrf51.crf --depend .\build\system_nrf51.d)
+I (d:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (d:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (..\..\..\..\Include\nrf.h)(0x53B246B4)
+I (..\..\..\..\Include\nrf51.h)(0x53B246B4)
+I (d:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x5209A730)
+I (d:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x5209A730)
+I (d:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x5209A732)
+I (..\..\..\..\Include\system_nrf51.h)(0x53B246B4)
+I (..\..\..\..\Include\nrf51_bitfields.h)(0x53B246B4)
+I (..\..\..\..\Include\nrf51_deprecated.h)(0x53B246B4)
+I (..\..\..\..\Include\compiler_abstraction.h)(0x53B246B4)
+F (.\main.cpp)(0x545E2CCE)(--cpp -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --enum_is_int -I.. -I..\..\..\..\Include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\Include\s110-I d:\Keil\ARM\RV31\INC-I d:\Keil\ARM\CMSIS\Include-I d:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10001 -DSPI_MASTER_0_ENABLE -o .\build\main.o --omf_browse .\build\main.crf --depend .\build\main.d)
+I (Arduino.h)(0x545E3341)
+I (d:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (d:\Keil\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (..\..\..\..\Include\boards.h)(0x53B24588)
+I (..\..\..\..\Include\boards/pca10001.h)(0x53B2458A)
+I (..\..\..\..\Include\nrf_gpio.h)(0x53B2457E)
+I (..\..\..\..\Include\nrf51.h)(0x53B246B4)
+I (d:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x5209A730)
+I (d:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (d:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x5209A730)
+I (d:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x5209A732)
+I (..\..\..\..\Include\system_nrf51.h)(0x53B246B4)
+I (..\..\..\..\Include\nrf51_bitfields.h)(0x53B246B4)
+I (HardwareSerial.h)(0x545E19F5)
+I (..\..\..\..\Include\nrf_delay.h)(0x53B2457E)
+I (..\..\..\..\Include\nrf.h)(0x53B246B4)
+I (..\..\..\..\Include\nrf51_deprecated.h)(0x53B246B4)
+I (..\..\..\..\Include\compiler_abstraction.h)(0x53B246B4)
+F (.\HardwareSerial.cpp)(0x545E19FA)(--cpp -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --enum_is_int -I.. -I..\..\..\..\Include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\Include\s110-I d:\Keil\ARM\RV31\INC-I d:\Keil\ARM\CMSIS\Include-I d:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10001 -DSPI_MASTER_0_ENABLE -o .\build\hardwareserial.o --omf_browse .\build\hardwareserial.crf --depend .\build\hardwareserial.d)
+I (HardwareSerial.h)(0x545E19F5)
+I (d:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (..\..\..\..\Include\boards.h)(0x53B24588)
+I (..\..\..\..\Include\boards/pca10001.h)(0x53B2458A)
+I (..\..\..\..\Include\nrf_gpio.h)(0x53B2457E)
+I (..\..\..\..\Include\nrf51.h)(0x53B246B4)
+I (d:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x5209A730)
+I (d:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x5209A730)
+I (d:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x5209A732)
+I (..\..\..\..\Include\system_nrf51.h)(0x53B246B4)
+I (..\..\..\..\Include\nrf51_bitfields.h)(0x53B246B4)
+I (..\..\..\..\Include\simple_uart.h)(0x53B2458A)
+I (d:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+F (.\Arduino.cpp)(0x545E2CE5)(--cpp -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --enum_is_int -I.. -I..\..\..\..\Include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\Include\s110-I d:\Keil\ARM\RV31\INC-I d:\Keil\ARM\CMSIS\Include-I d:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10001 -DSPI_MASTER_0_ENABLE -o .\build\arduino.o --omf_browse .\build\arduino.crf --depend .\build\arduino.d)
+I (Arduino.h)(0x545E3341)
+I (d:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (d:\Keil\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (..\..\..\..\Include\boards.h)(0x53B24588)
+I (..\..\..\..\Include\boards/pca10001.h)(0x53B2458A)
+I (..\..\..\..\Include\nrf_gpio.h)(0x53B2457E)
+I (..\..\..\..\Include\nrf51.h)(0x53B246B4)
+I (d:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x5209A730)
+I (d:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (d:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x5209A730)
+I (d:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x5209A732)
+I (..\..\..\..\Include\system_nrf51.h)(0x53B246B4)
+I (..\..\..\..\Include\nrf51_bitfields.h)(0x53B246B4)
+I (HardwareSerial.h)(0x545E19F5)
+F (.\io.cpp)(0x545E143D)(--cpp -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --enum_is_int -I.. -I..\..\..\..\Include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\Include\s110-I d:\Keil\ARM\RV31\INC-I d:\Keil\ARM\CMSIS\Include-I d:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10001 -DSPI_MASTER_0_ENABLE -o .\build\io.o --omf_browse .\build\io.crf --depend .\build\io.d)
+I (d:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (..\..\..\..\Include\nrf_gpio.h)(0x53B2457E)
+I (..\..\..\..\Include\nrf51.h)(0x53B246B4)
+I (d:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x5209A730)
+I (d:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x5209A730)
+I (d:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x5209A732)
+I (..\..\..\..\Include\system_nrf51.h)(0x53B246B4)
+I (..\..\..\..\Include\nrf51_bitfields.h)(0x53B246B4)
+I (Arduino.h)(0x545E3341)
+I (d:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (d:\Keil\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (..\..\..\..\Include\boards.h)(0x53B24588)
+I (..\..\..\..\Include\boards/pca10001.h)(0x53B2458A)
+I (HardwareSerial.h)(0x545E19F5)
+F (.\Blink.cpp)(0x545E1916)(--cpp -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --enum_is_int -I.. -I..\..\..\..\Include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\Include\s110-I d:\Keil\ARM\RV31\INC-I d:\Keil\ARM\CMSIS\Include-I d:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10001 -DSPI_MASTER_0_ENABLE -o .\build\blink.o --omf_browse .\build\blink.crf --depend .\build\blink.d)
+I (Arduino.h)(0x545E3341)
+I (d:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (d:\Keil\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (..\..\..\..\Include\boards.h)(0x53B24588)
+I (..\..\..\..\Include\boards/pca10001.h)(0x53B2458A)
+I (..\..\..\..\Include\nrf_gpio.h)(0x53B2457E)
+I (..\..\..\..\Include\nrf51.h)(0x53B246B4)
+I (d:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x5209A730)
+I (d:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (d:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x5209A730)
+I (d:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x5209A732)
+I (..\..\..\..\Include\system_nrf51.h)(0x53B246B4)
+I (..\..\..\..\Include\nrf51_bitfields.h)(0x53B246B4)
+I (HardwareSerial.h)(0x545E19F5)
+F (.\SPI.cpp)(0x545E37D5)(--cpp -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --enum_is_int -I.. -I..\..\..\..\Include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\Include\s110-I d:\Keil\ARM\RV31\INC-I d:\Keil\ARM\CMSIS\Include-I d:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10001 -DSPI_MASTER_0_ENABLE -o .\build\spi.o --omf_browse .\build\spi.crf --depend .\build\spi.d)
+I (SPI.h)(0x545E3509)
+I (..\..\..\..\Include\boards.h)(0x53B24588)
+I (..\..\..\..\Include\boards/pca10001.h)(0x53B2458A)
+I (..\..\..\..\Include\nrf_gpio.h)(0x53B2457E)
+I (..\..\..\..\Include\nrf51.h)(0x53B246B4)
+I (d:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x5209A730)
+I (d:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (d:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x5209A730)
+I (d:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x5209A732)
+I (..\..\..\..\Include\system_nrf51.h)(0x53B246B4)
+I (..\..\..\..\Include\nrf51_bitfields.h)(0x53B246B4)
+I (..\..\..\..\Include\sd_common\app_util_platform.h)(0x53B2457C)
+I (..\..\..\..\Include\compiler_abstraction.h)(0x53B246B4)
+I (..\..\..\..\Include\app_common\app_error.h)(0x53B2457C)
+I (d:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (..\..\..\..\Include\s110\nrf_error.h)(0x529BFE04)
+I (..\..\..\..\Include\spi_master.h)(0x545E1FED)
+I (d:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+F (..\..\..\..\Source\spi_master\spi_master.c)(0x53B24522)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --enum_is_int -I.. -I..\..\..\..\Include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\Include\s110-I d:\Keil\ARM\RV31\INC-I d:\Keil\ARM\CMSIS\Include-I d:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10001 -DSPI_MASTER_0_ENABLE -o .\build\spi_master.o --omf_browse .\build\spi_master.crf --depend .\build\spi_master.d)
+I (..\..\..\..\Include\app_common\app_error.h)(0x53B2457C)
+I (d:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (d:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (..\..\..\..\Include\s110\nrf_error.h)(0x529BFE04)
+I (..\..\..\..\Include\nrf_gpio.h)(0x53B2457E)
+I (..\..\..\..\Include\nrf51.h)(0x53B246B4)
+I (d:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x5209A730)
+I (d:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x5209A730)
+I (d:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x5209A732)
+I (..\..\..\..\Include\system_nrf51.h)(0x53B246B4)
+I (..\..\..\..\Include\nrf51_bitfields.h)(0x53B246B4)
+I (..\..\..\..\Include\s110\nrf_soc.h)(0x53A0F546)
+I (..\..\..\..\Include\s110\nrf_svc.h)(0x53A0F546)
+I (..\..\..\..\Include\s110\nrf_error_soc.h)(0x5363F06C)
+I (..\..\..\..\Include\spi_master.h)(0x545E1FED)
+I (d:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+F (..\..\..\..\Source\simple_uart\simple_uart.c)(0x53B24574)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --enum_is_int -I.. -I..\..\..\..\Include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\Include\s110-I d:\Keil\ARM\RV31\INC-I d:\Keil\ARM\CMSIS\Include-I d:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10001 -DSPI_MASTER_0_ENABLE -o .\build\simple_uart.o --omf_browse .\build\simple_uart.crf --depend .\build\simple_uart.d)
+I (d:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (..\..\..\..\Include\nrf.h)(0x53B246B4)
+I (..\..\..\..\Include\nrf51.h)(0x53B246B4)
+I (d:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x5209A730)
+I (d:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x5209A730)
+I (d:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x5209A732)
+I (..\..\..\..\Include\system_nrf51.h)(0x53B246B4)
+I (..\..\..\..\Include\nrf51_bitfields.h)(0x53B246B4)
+I (..\..\..\..\Include\nrf51_deprecated.h)(0x53B246B4)
+I (..\..\..\..\Include\compiler_abstraction.h)(0x53B246B4)
+I (..\..\..\..\Include\simple_uart.h)(0x53B2458A)
+I (d:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (..\..\..\..\Include\nrf_delay.h)(0x53B2457E)
+I (..\..\..\..\Include\nrf_gpio.h)(0x53B2457E)
+F (..\..\..\..\Source\nrf_delay\nrf_delay.c)(0x53B2451E)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --enum_is_int -I.. -I..\..\..\..\Include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\Include\s110-I d:\Keil\ARM\RV31\INC-I d:\Keil\ARM\CMSIS\Include-I d:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_PCA10001 -DSPI_MASTER_0_ENABLE -o .\build\nrf_delay.o --omf_browse .\build\nrf_delay.crf --depend .\build\nrf_delay.d)
+I (d:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (..\..\..\..\Include\compiler_abstraction.h)(0x53B246B4)
+I (..\..\..\..\Include\nrf.h)(0x53B246B4)
+I (..\..\..\..\Include\nrf51.h)(0x53B246B4)
+I (d:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x5209A730)
+I (d:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (d:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x5209A730)
+I (d:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x5209A732)
+I (..\..\..\..\Include\system_nrf51.h)(0x53B246B4)
+I (..\..\..\..\Include\nrf51_bitfields.h)(0x53B246B4)
+I (..\..\..\..\Include\nrf51_deprecated.h)(0x53B246B4)
+I (..\..\..\..\Include\nrf_delay.h)(0x53B2457E)
+F (.\HardwareSerial.h)(0x545E19F5)()
+F (.\Arduino.h)(0x545E3341)()
+F (.\SPI.h)(0x545E3509)()

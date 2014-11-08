@@ -25,7 +25,6 @@
 #include <math.h>
 #include "boards.h"
 
-
 #ifdef __cplusplus
 extern "C"{
 #endif
