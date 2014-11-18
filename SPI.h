@@ -2,15 +2,4 @@
 
 
 
-
-class SPIClass
-{
-	public:
-		void begin();
-
-
-};
-
-
-
-extern SPIClass SPI;
+void SPI_begin(void);

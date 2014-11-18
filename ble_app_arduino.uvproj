@@ -30,7 +30,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Nordic\nRF51\nRF51822.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -98,7 +97,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -171,10 +169,6 @@
           <Flash2>BIN\UL2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -354,7 +348,7 @@
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <VariousControls>
-              <MiscControls></MiscControls>
+              <MiscControls>--c99</MiscControls>
               <Define>NRF51 DEBUG_NRF_USER BLE_STACK_SUPPORT_REQD BOARD_PCA10001 SPI_MASTER_0_ENABLE</Define>
               <Undefine></Undefine>
               <IncludePath>..;..\..\..\..\Include;..\..\..\..\Include\app_common;..\..\..\..\Include\ble;..\..\..\..\Include\ble\ble_services;..\..\..\..\Include\ble\softdevice;..\..\..\..\Include\sd_common;..\..\..\..\Include\s110</IncludePath>
@@ -414,34 +408,34 @@
           <GroupName>Source Code</GroupName>
           <Files>
             <File>
-              <FileName>main.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>.\main.cpp</FilePath>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\main.c</FilePath>
             </File>
             <File>
-              <FileName>HardwareSerial.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>.\HardwareSerial.cpp</FilePath>
+              <FileName>Blink.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Blink.c</FilePath>
             </File>
             <File>
-              <FileName>Arduino.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>.\Arduino.cpp</FilePath>
+              <FileName>io.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\io.c</FilePath>
             </File>
             <File>
-              <FileName>io.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>.\io.cpp</FilePath>
+              <FileName>HardwareSerial.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HardwareSerial.c</FilePath>
             </File>
             <File>
-              <FileName>Blink.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>.\Blink.cpp</FilePath>
+              <FileName>Arduino.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Arduino.c</FilePath>
             </File>
             <File>
-              <FileName>SPI.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>.\SPI.cpp</FilePath>
+              <FileName>SPI.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SPI.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -449,9 +443,9 @@
           <GroupName>Library</GroupName>
           <Files>
             <File>
-              <FileName>spi_master.c</FileName>
+              <FileName>nrf_delay.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Source\spi_master\spi_master.c</FilePath>
+              <FilePath>..\..\..\..\Source\nrf_delay\nrf_delay.c</FilePath>
             </File>
             <File>
               <FileName>simple_uart.c</FileName>
@@ -459,9 +453,9 @@
               <FilePath>..\..\..\..\Source\simple_uart\simple_uart.c</FilePath>
             </File>
             <File>
-              <FileName>nrf_delay.c</FileName>
+              <FileName>spi_master.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Source\nrf_delay\nrf_delay.c</FilePath>
+              <FilePath>..\..\..\..\Source\spi_master\spi_master.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -469,14 +463,19 @@
           <GroupName>Include</GroupName>
           <Files>
             <File>
-              <FileName>HardwareSerial.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\HardwareSerial.h</FilePath>
-            </File>
-            <File>
               <FileName>Arduino.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Arduino.h</FilePath>
+            </File>
+            <File>
+              <FileName>io.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\io.h</FilePath>
+            </File>
+            <File>
+              <FileName>HardwareSerial.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\HardwareSerial.h</FilePath>
             </File>
             <File>
               <FileName>SPI.h</FileName>
@@ -511,7 +510,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Nordic\nRF51\nrf51822.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -579,7 +577,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -652,10 +649,6 @@
           <Flash2>Segger\JL2CM3.dll</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -895,34 +888,34 @@
           <GroupName>Source Code</GroupName>
           <Files>
             <File>
-              <FileName>main.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>.\main.cpp</FilePath>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\main.c</FilePath>
             </File>
             <File>
-              <FileName>HardwareSerial.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>.\HardwareSerial.cpp</FilePath>
+              <FileName>Blink.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Blink.c</FilePath>
             </File>
             <File>
-              <FileName>Arduino.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>.\Arduino.cpp</FilePath>
+              <FileName>io.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\io.c</FilePath>
             </File>
             <File>
-              <FileName>io.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>.\io.cpp</FilePath>
+              <FileName>HardwareSerial.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HardwareSerial.c</FilePath>
             </File>
             <File>
-              <FileName>Blink.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>.\Blink.cpp</FilePath>
+              <FileName>Arduino.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Arduino.c</FilePath>
             </File>
             <File>
-              <FileName>SPI.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>.\SPI.cpp</FilePath>
+              <FileName>SPI.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SPI.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -930,9 +923,9 @@
           <GroupName>Library</GroupName>
           <Files>
             <File>
-              <FileName>spi_master.c</FileName>
+              <FileName>nrf_delay.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Source\spi_master\spi_master.c</FilePath>
+              <FilePath>..\..\..\..\Source\nrf_delay\nrf_delay.c</FilePath>
             </File>
             <File>
               <FileName>simple_uart.c</FileName>
@@ -940,9 +933,9 @@
               <FilePath>..\..\..\..\Source\simple_uart\simple_uart.c</FilePath>
             </File>
             <File>
-              <FileName>nrf_delay.c</FileName>
+              <FileName>spi_master.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Source\nrf_delay\nrf_delay.c</FilePath>
+              <FilePath>..\..\..\..\Source\spi_master\spi_master.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -950,14 +943,19 @@
           <GroupName>Include</GroupName>
           <Files>
             <File>
-              <FileName>HardwareSerial.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\HardwareSerial.h</FilePath>
-            </File>
-            <File>
               <FileName>Arduino.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Arduino.h</FilePath>
+            </File>
+            <File>
+              <FileName>io.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\io.h</FilePath>
+            </File>
+            <File>
+              <FileName>HardwareSerial.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\HardwareSerial.h</FilePath>
             </File>
             <File>
               <FileName>SPI.h</FileName>
